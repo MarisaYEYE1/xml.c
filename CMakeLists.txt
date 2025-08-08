@@ -3,7 +3,7 @@ project(xml C CXX)
 set(VERSION_MAJOR "0")
 set(VERSION_MINOR "2")
 set(VERSION_PATCH "0")
-cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR) 
+cmake_minimum_required(VERSION 3.20 FATAL_ERROR) 
 
 
 # Define main library target
@@ -48,4 +48,5 @@ target_include_directories(
 # Build unit cases
 enable_testing()
 add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/test")
+
 
